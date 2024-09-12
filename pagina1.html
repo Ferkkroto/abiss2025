@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <style>
+    body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Ajusta la altura al 100% de la ventana */
+            background-image: url('fondo3.jpg'); /* Reemplaza con la ruta de tu imagen */
+            background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            overflow: hidden; /* Oculta el desbordamiento */
+        }
+
+        .poema-container {
+            position: absolute;
+            top: 0; /* Empieza en la parte superior de la ventana */
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px); /* Ajusta el ancho para tener un margen de 20px a los lados */
+            height: 50vh; /* Ajusta la altura al 50% de la ventana */
+            overflow: hidden; /* Oculta la parte del contenido que excede el contenedor */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            padding: 20px; /* Espacio interno */
+            box-sizing: border-box; /* Incluye padding y border en el tamaño total del contenedor */
+        }
+
+        /* Contenido del poema */
+        .poema-content {
+            color: aliceblue;
+            text-align: center; /* Centra el texto horizontalmente */
+            animation: scroll-up 20s linear infinite; /* Animación para desplazar el contenido hacia arriba */
+        }
+
+        /* Animación de desplazamiento hacia arriba */
+        @keyframes scroll-up {
+            from {
+                transform: translateY(40%);
+            }
+            to {
+                transform: translateY(-100%);
+            }
+        }
+         /* Estilos para el contenedor de GIFs */
+        .gifs-container {
+            position: absolute;
+            top: calc(50% + 8px); /* Debajo del contenedor del poema */
+            left: 50%;
+            transform: translateX(-50%);
+            width: calc(100% - 40px); /* Igual que el contenedor del poema */
+            background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente para los GIFs */
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+          
+       
+        }
+
+        /* Estilos del título */
+        .gifs-container h2 {
+            color: rgb(1, 1, 1);
+            margin-bottom: 20px; /* Espacio debajo del título */
+            text-shadow: 
+                -2px -2px 0 #fff,  /* Sombra arriba izquierda */
+                2px -2px 0 #fff,   /* Sombra arriba derecha */
+                -2px 2px 0 #fff,   /* Sombra abajo izquierda */
+                2px 2px 0 #fff;    /* Sombra abajo derecha */
+        }
+
+        /* Estilos para los GIFs */
+        .gifs-container img {
+            width: 100px; /* Ajusta el tamaño de los GIFs */
+            margin: 10px;
+        }
+        .continue-button {
+            background-color: #fa1111;
+            color: #ffffff;
+            border: none;
+    
+            padding: 10px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+            position: relative;
+            margin: 0 auto; /* Centra el botón horizontalmente */
+        }
+
+        .continue-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Contenedor del botón */
+        .button-container {
+            text-align: center;
+            margin-top: 40px; /* Espacio entre el botón y el contenedor de GIFs */
+            position: absolute;
+            bottom: 0; /* Mantén el botón en la parte inferior */
+            width: 100%;
+            padding-bottom: 20px; /* Ajusta este valor para separar más el botón */
+        }
+ 
+    </style>
+</head>
+<body>
+    
+     <!-- Contenedor del poema -->
+     <div class="poema-container">
+        <div class="poema-content">
+            <h1>Feliz primer mes de novios, mi amor 🌟💖</h1>
+            <p>
+                Desde el primer momento en que te vi, nunca imaginé que llegarías a ser mi novia, pero aquí estamos, celebrando nuestro primer mes juntos. Mi corazón se llena de alegría y amor cada día que paso a tu lado. Cada instante contigo es un regalo que atesoro profundamente. Tu sonrisa 😊, tu ternura 🥰 y la forma en que iluminas mi vida 🌟 hacen que me enamore más y más de ti con cada amanecer 🌅.<br>
+                Desde que te conocí, mis días han sido mucho más felices 😊. Cada día contigo es una nueva aventura 🚀, una nueva oportunidad para amarte aún más. Eres mi todo mi Abiss, mi princesa 👑, mi Minioms 💕, y mi chiquita 🌼, y quiero que nunca olvides cuánto te amo 💗. Eres la mejor, y no hay palabras suficientes para expresar lo agradecido que estoy de tenerte en mi vida 🙏.<br>
+                Gracias por ser tú y por hacerme sentir tan especial 💖.Te amo muchísimo y siempre lo haré 💞.
+            </p>
+
+        
+            <!-- Añade más poemas si es necesario -->
+
+           
+        </div>
+        
+    </div>
+    <div class="gifs-container">
+        <h2>Te amo mucho mi Abiss</h2>
+        <img src="sticker6.gif" alt="">
+        <img src="sticker8.gif" alt="">
+    </div>
+    <!-- Contenedor del botón de continuar -->
+    <div class="button-container">
+        <button class="continue-button" onclick="location.href='pagina2.html'">Continuar Bebe</button>
+    </div>
+    <audio id="miCancion" src="Amor(256k).mp3" preload="auto" autoplay loop></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>

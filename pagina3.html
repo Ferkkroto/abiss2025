@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despedida</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('constelacion.jpg'); /* Imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Mensaje de despedida */
+        .message {
+            font-size: 2em;
+            margin: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        /* Animación de desvanecimiento */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Contenedor para el botón */
+        .button-container {
+            margin-top: 30px;
+        }
+
+        /* Botón de despedida */
+        .next-button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .next-button:hover {
+            background-color: #ff1493;
+        }
+
+        /* Contenedor de elementos gráficos */
+        .graphics {
+            margin-top: 60px;
+        }
+
+        .graphics img {
+            width: 150px;
+            height: auto;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        "🌟 Cada momento contigo es un sueño hecho realidad. Gracias por ser mi estrella fugaz en este viaje. 🌠💖 ¡Siempre contigo!"
+    </div>
+
+    <div class="button-container">
+        <a href="index.html" class="next-button">Volver al Inicio</a>
+    </div>
+
+    <div class="graphics">
+        <img src="sticker3.gif" alt="Gráfico de despedida">
+    </div>
+</body>
+</html>

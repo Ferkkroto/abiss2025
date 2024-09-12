@@ -1,0 +1,43 @@
+.welcome-section{
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    color: #000000;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    
+}
+.stiker{
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+@media(max-width: 768px){
+    .stiker{
+        width: 140px;
+    }
+}
+.titulo {
+    font-weight: bold; /* Aplica negrita al texto */
+    color: #ff0040; /* Color del texto */
+    font-size: 3rem; /* Tamaño de fuente específico para el h1 */
+  }
+  
+  .subtitulo {
+    font-weight: bold; /* Aplica negrita al texto */
+    color: #0c0506; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño de fuente específico para el p */
+  }
+  .detalle{
+    margin-top: 30px;
+  }
+  .detalle-texto{
+    font-weight: bold;
+    color: #f63b7f; /* Color del texto */
+    font-size: 1.25rem;
+  }
+  .abrir-btn{
+    background-color: rgb(104, 164, 217);
+    color: #000000;
+    margin-top: 10px;
+  }
